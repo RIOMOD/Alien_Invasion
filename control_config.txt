@@ -1,0 +1,4 @@
+key_right: right
+key_left: left
+key_fire: space
+key_quit: q
