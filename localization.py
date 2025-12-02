@@ -137,7 +137,7 @@ TRANSLATIONS = {
 class Translator:
     """Lớp dịch - quản lý dịch vụ dịch ngôn ngữ"""
     
-    def __init__(self, language='vi'):
+    def __init__(self, language='en'):
         self.language = language
     
     def set_language(self, language):
@@ -148,7 +148,7 @@ class Translator:
     def get(self, key, *args):
         """Lấy chuỗi dịch từ từ khóa"""
         if self.language not in TRANSLATIONS:
-            self.language = 'vi'
+            self.language = 'en'
         
         translation_dict = TRANSLATIONS[self.language]
         text = translation_dict.get(key, key)

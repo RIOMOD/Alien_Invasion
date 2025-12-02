@@ -40,7 +40,7 @@ class Settings:
         self.key_quit = 'q'
         # game audio and UI
         self.volume = 0.8  # default master volume (0.0 - 1.0)
-        self.language = 'vi'  # default language: 'vi' or 'en'
+        self.language = 'en'  # default language: 'vi' or 'en'
         self._load_control_config()
         self._load_game_config()
 
